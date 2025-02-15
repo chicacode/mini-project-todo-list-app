@@ -39,7 +39,7 @@ This console-based to-do list application provides a menu for users to manage th
 ## Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/mini-project.git
+   git clone https://github.com/chicacode/mini-project.git
    ```
 2. Navigate to the project folder:
    ```sh
