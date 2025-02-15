@@ -1,7 +1,11 @@
 # Mini Project: To-Do List Application
 # Data Science Diploma
-# Instructor: Derrick Park
-# Students: Amir Oliveira, Maria de Los Angeles Rojas, Geraldine Hernandez Al Attrach
+
+## Instructor: Derrick Park
+## Students: 
+1. Amir Oliveira
+2. Maria de Los Angeles Rojas
+3. Geraldine Hernandez Al Attrach
 
 ## Objective
 Create a simple to-do list application that allows users to add, remove, and view tasks. Additionally, implement a feature to
