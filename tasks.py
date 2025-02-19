@@ -32,3 +32,9 @@ def view_tasks(tasks):
         for index, task in enumerate(tasks, 1):
             print(f'{index}. {task}')
 
+
+def suggest_tasks(tasks):
+    if not tasks:
+        print('No tasks in the To-Do List')
+        return
+    print("Here are some tasks you might want to work on:")
