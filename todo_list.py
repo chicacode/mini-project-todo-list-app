@@ -1,4 +1,4 @@
-from tasks import add_task, view_tasks
+from tasks import add_task, remove_task, view_tasks
 
 def main():
     tasks = []
@@ -10,6 +10,8 @@ def main():
         if choice == "1":
             task = input('Enter task:')
             add_task(tasks, task)
+        elif choice == "2":
+            remove_task(tasks)
         elif choice == "3":
             view_tasks(tasks)
         elif choice == "4":
