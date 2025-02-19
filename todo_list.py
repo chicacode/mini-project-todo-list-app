@@ -1,5 +1,4 @@
-
-from tasks import add_task, remove_task, view_tasks
+from tasks import add_task, remove_task, view_tasks, suggest_tasks
 
 def main():
     tasks = []
@@ -15,6 +14,8 @@ def main():
         elif choice == "3":
             view_tasks(tasks)
         elif choice == "4":
+            suggest_tasks(tasks)
+        elif choice == "5":
             print("Exiting app... Good Bye!")
             break
         else:
