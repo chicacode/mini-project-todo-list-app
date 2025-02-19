@@ -47,5 +47,8 @@ def suggest_tasks(tasks):
     if not tasks:
         print('No tasks in the To-Do List')
         return
+    sorted_tasks = sort_tasks(tasks)
     print("Here are some tasks you might want to work on:")
+    for task in sorted_tasks[:3]:
+        print(f"{task['task']} - {task['priority']} - {task['deadline']}")
 
