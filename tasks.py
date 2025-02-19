@@ -1,11 +1,12 @@
 from datetime import datetime
+from utils import validate_date, sort_tasks
 
 def add_task(tasks, task, priority, deadline):
     if priority not in ["high", "medium", "low"]:
-        print("Enter a valid priority, choose high, medium or low")
+        print("Enter a valid priority, choose high, medium or low.")
         return
-    if datetime.strptime(deadline, '%m/%d/%Y'):
-        print("Enter a valid date")
+    if not validate_date(deadline):
+        print("Invalid date format. Please enter YYYY-MM-DD.")
         return
 
     tasks.append({"task":task, "priority": priority, "deadline":deadline})
@@ -34,11 +35,13 @@ def remove_task(tasks):
 def view_tasks(tasks):
     if not tasks:
         print('No tasks in the To-Do List')
-    else:
-        print('\n To-Do List Tasks')
-        for index, task in enumerate(tasks, 1):
-            print(f'{index}. {task}')
+        return
 
+    sorted_tasks = sort_tasks(tasks)
+
+    print('\n To-Do List Tasks')
+    for index, task in enumerate(sorted_tasks, 0):
+        print(f"{index}. {task['task']} - {task['priority']} - {task['deadline']}")
 
 def suggest_tasks(tasks):
     if not tasks:

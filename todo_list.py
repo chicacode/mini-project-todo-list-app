@@ -7,9 +7,9 @@ def main():
         print('\n 1.Add Task \n 2. Remove task \n 3. View Tasks \n 4. Leave App')
         choice = input('Enter your choice: ')
         if choice == "1":
-            task = input('Enter task:')
+            task = input('Enter task: ')
             priority = input("Set as high, medium or low: ").lower()
-            deadline = input("Set the deadline of you task (mm/dd/YYYY): ")
+            deadline = input("Enter the deadline (YYYY-MM-DD): ")
             add_task(tasks, task, priority, deadline)
         elif choice == "2":
             remove_task(tasks)
