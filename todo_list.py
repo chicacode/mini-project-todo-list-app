@@ -8,7 +8,9 @@ def main():
         choice = input('Enter your choice: ')
         if choice == "1":
             task = input('Enter task:')
-            add_task(tasks, task)
+            priority = input("Set as high, medium or low: ").lower()
+            deadline = input("Set the deadline of you task (mm/dd/YYYY): ")
+            add_task(tasks, task, priority, deadline)
         elif choice == "2":
             remove_task(tasks)
         elif choice == "3":
