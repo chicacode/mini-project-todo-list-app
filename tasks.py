@@ -9,7 +9,7 @@ def remove_task(tasks):
         return
 
     print("Current to do list")
-    for index,task in enumerate(tasks,1):
+    for index,task in enumerate(tasks,0):
         print(f"{index}. {task}")
 
     try:
@@ -23,8 +23,6 @@ def remove_task(tasks):
 
     except ValueError:
         print("Please try a valid enter")
-
-
 
 def view_tasks(tasks):
     if not tasks:

@@ -7,7 +7,6 @@ def main():
         print('\n To-Do List Application')
         print('\n 1.Add Task \n 2. Remove task \n 3. View Tasks \n 4. Leave App')
         choice = input('Enter your choice: ')
-
         if choice == "1":
             task = input('Enter task:')
             add_task(tasks, task)
