@@ -1,7 +1,15 @@
+from datetime import datetime
 
-def add_task(tasks, task):
-    tasks.append(task)
-    print(f'{task} has been added to the list')
+def add_task(tasks, task, priority, deadline):
+    if priority not in ["high", "medium", "low"]:
+        print("Enter a valid priority, choose high, medium or low")
+        return
+    if datetime.strptime(deadline, '%m/%d/%Y'):
+        print("Enter a valid date")
+        return
+
+    tasks.append({"task":task, "priority": priority, "deadline":deadline})
+    print(f'{task} has been added to the list with priority {priority} and deadline {deadline}')
 
 def remove_task(tasks):
     if not tasks:
@@ -15,7 +23,6 @@ def remove_task(tasks):
     try:
         task_index = int(input("Enter the task number to remove: "))
         if 0 <= task_index < len(tasks):
-            # # test = task_index + 1
             rem_task = tasks.pop(task_index)
             print(f"The task removed was {rem_task}")
         else:
@@ -38,3 +45,4 @@ def suggest_tasks(tasks):
         print('No tasks in the To-Do List')
         return
     print("Here are some tasks you might want to work on:")
+
