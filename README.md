@@ -24,6 +24,7 @@ This console-based to-do list application provides a menu for users to manage th
 - **Add Task:** Users can add a new task to the list.
 - **Remove Task:** Users can remove a task from the list.
 - **View Tasks:** Users can display all tasks in the list.
+- **Suggests Tasks: based on priority and deadline
 - **Exit:** Users can terminate the program.
 
 ## Implementation Steps
@@ -34,12 +35,12 @@ This console-based to-do list application provides a menu for users to manage th
 
 ## Technologies Used
 - **Python**: A core programming language for the project.
-- **NumPy**: Used for data handling and potential future expansions.
+- **Datetime**: Used for date handling.
 
 ## Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/chicacode/mini-project.git
+   git clone https://github.com/chicacode/mini-project-todo-list-app.git
    ```
 2. Navigate to the project folder:
    ```sh
