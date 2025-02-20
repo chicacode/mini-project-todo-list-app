@@ -48,7 +48,6 @@ This console-based to-do list application provides a menu for users to manage th
    ```
 3. Install dependencies (if any):
    ```sh
-
    ```
 4. Run the program:
    ```sh
