@@ -1,4 +1,3 @@
-from datetime import datetime
 from utils import validate_date, sort_tasks
 
 def add_task(tasks, task, priority, deadline):
@@ -10,7 +9,7 @@ def add_task(tasks, task, priority, deadline):
         return
 
     tasks.append({"task":task, "priority": priority, "deadline":deadline})
-    print(f'{task} has been added to the list with priority {priority} and deadline {deadline}')
+    print(f'{task} has been added to the list with priority: {priority} and deadline: {deadline}')
 
 def remove_task(tasks):
     if not tasks:
