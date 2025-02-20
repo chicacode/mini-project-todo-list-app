@@ -44,11 +44,11 @@ This console-based to-do list application provides a menu for users to manage th
    ```
 2. Navigate to the project folder:
    ```sh
-   cd mini-project
+   cd mini-project-todo-list-app
    ```
 3. Install dependencies (if any):
    ```sh
-   pip install numpy
+
    ```
 4. Run the program:
    ```sh
@@ -57,7 +57,7 @@ This console-based to-do list application provides a menu for users to manage th
 
 ## Usage
 1. Run the script to access the to-do list menu.
-2. Select options to **add**, **remove**, or **view** tasks.
+2. Select options to **add**, **remove**, suggest, or **view** tasks.
 3. Enter "4" to **exit** the application.
 
 ## Example Output
@@ -67,13 +67,14 @@ To-Do List Application
 1. Add Task
 2. Remove Task
 3. View Tasks
-4. Exit
+4. Suggest
+5. Exit App
 Enter your choice:
 ```
 
 ## Future Improvements
 - Implement a GUI version using Tkinter or PyQt.
-- Add task deadlines and priority levels.
+- Mark Tasks as Complete.
 - Store tasks in a file or database for persistence.
 
 ## Contributing
