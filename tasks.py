@@ -1,5 +1,7 @@
 from utils import validate_date, sort_tasks
 
+# CRUD - Create - Read - Delete
+# Create tasks and set priority and deadline
 def add_task(tasks, task, priority, deadline):
     if priority not in ["high", "medium", "low"]:
         print("Enter a valid priority, choose high, medium or low.")
@@ -11,6 +13,7 @@ def add_task(tasks, task, priority, deadline):
     tasks.append({"task":task, "priority": priority, "deadline":deadline})
     print(f'{task} has been added to the list with priority: {priority} and deadline: {deadline}')
 
+# Remove task - Delete
 def remove_task(tasks):
     if not tasks:
         print("No task removed")
@@ -31,6 +34,7 @@ def remove_task(tasks):
     except ValueError:
         print("Please try a valid enter")
 
+# View - Read all Task
 def view_tasks(tasks):
     if not tasks:
         print('No tasks in the To-Do List')
@@ -42,6 +46,7 @@ def view_tasks(tasks):
     for index, task in enumerate(sorted_tasks, 0):
         print(f"{index}. {task['task']} - {task['priority']} - {task['deadline']}")
 
+# Suggest task based on priority or deadline
 def suggest_tasks(tasks):
     if not tasks:
         print('No tasks in the To-Do List')

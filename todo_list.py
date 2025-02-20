@@ -1,5 +1,5 @@
 from tasks import add_task, remove_task, view_tasks, suggest_tasks
-
+# Entry point
 def main():
     tasks = []
     while True:
